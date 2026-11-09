@@ -19,15 +19,12 @@
     font-family:'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace;
     overflow-x:hidden;
   }
-  /* ===== matrix rain ===== */
   #rain{position:fixed;inset:0;z-index:0;opacity:.28}
-  /* ===== CRT scanlines ===== */
   #crt{position:fixed;inset:0;z-index:50;pointer-events:none;
     background:repeating-linear-gradient(0deg,rgba(0,0,0,.12) 0 1px,transparent 1px 3px);
     mix-blend-mode:multiply}
   #vignette{position:fixed;inset:0;z-index:49;pointer-events:none;
     background:radial-gradient(ellipse at center,transparent 55%,rgba(0,0,0,.75) 100%)}
-  /* ===== boot overlay ===== */
   #boot{position:fixed;inset:0;z-index:100;background:#000;color:var(--green);
     padding:6vh 6vw;font-size:14px;line-height:1.7;overflow:hidden;transition:opacity .8s}
   #boot .ok{color:var(--green-dim)} #boot .warn{color:var(--amber)}
@@ -35,9 +32,7 @@
     text-shadow:0 0 18px var(--green);animation:flicker 1.4s infinite}
   @keyframes flicker{0%,100%{opacity:1}92%{opacity:1}93%{opacity:.4}94%{opacity:1}97%{opacity:.7}98%{opacity:1}}
   #boot.done{opacity:0;pointer-events:none}
-  /* ===== layout ===== */
   main{position:relative;z-index:1;max-width:920px;margin:0 auto;padding:34px 16px 90px}
-  /* ===== terminal ===== */
   .term{background:rgba(6,12,9,.92);border:1px solid var(--border);border-radius:10px;
     box-shadow:0 0 40px rgba(0,230,118,.08),0 20px 60px rgba(0,0,0,.7);
     backdrop-filter:blur(3px);overflow:hidden}
@@ -57,11 +52,9 @@
   .cursor{display:inline-block;width:9px;height:17px;background:var(--green);
     vertical-align:-3px;animation:blink 1s steps(1) infinite;box-shadow:0 0 10px var(--green)}
   @keyframes blink{50%{opacity:0}}
-  /* input line */
   .inline{display:flex;gap:0;align-items:baseline}
   .inline input{flex:1;background:none;border:none;outline:none;color:#fff;
     font:inherit;caret-color:transparent}
-  /* ===== footer ===== */
   footer{position:relative;z-index:1;text-align:center;color:var(--green-dim);
     font-size:12.5px;padding:26px 10px;letter-spacing:1px}
   footer a{color:var(--muted);text-decoration:none}
@@ -89,7 +82,7 @@
 </main>
 
 <footer>
-  © 2026 MUSTAFA AK · <a href="https://github.com/mustafaak0">github.com/mafaak0</a> · stay curious, stay secure
+  © 2026 MUSTAFA AK · <a href="https://github.com/mustafaak0">github.com/mustafaak0</a> · stay curious, stay secure
 </footer>
 
 <script>
