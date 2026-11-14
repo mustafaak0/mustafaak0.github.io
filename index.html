@@ -111,7 +111,7 @@
 /* ================= BOOT SEQUENCE ================= */
 (()=>{
   const lines=[
-    ['PACKETHAWK BIOS v3.0.0 — (c) 2026 Mustafa AK',''],
+    ['VULNHAWK BIOS v4.0.0 — (c) 2026 Mustafa AK',''],
     ['CPU: Neuron Core X8 @ 4.20 GHz .............. OK','ok'],
     ['MEM: 65536 MB ECC ............................ OK','ok'],
     ['Loading kernel /dev/curiosity ............... OK','ok'],
@@ -131,7 +131,7 @@
     }else{
       clearInterval(t);
       const h=document.createElement('h1');
-      h.innerHTML='[ ACCESS GRANTED ]<br><span style="font-size:.45em;letter-spacing:2px;color:#7ee8b0">welcome, visitor — initiating terminal…</span>';
+      h.innerHTML='[ ACCESS GRANTED ]<br><span style=\"font-size:.45em;letter-spacing:2px;color:#7ee8b0\">welcome, visitor — initiating terminal…</span>';
       box.appendChild(h);
       setTimeout(()=>{document.getElementById('boot').classList.add('done');startTerm();},1400);
     }
@@ -202,7 +202,7 @@ arsenal:()=>out(
 └─$ ls /opt/tools
 
   <span class="hl">recon</span>        nmap · subfinder · amass · theHarvester
-  <span class="hl">web</span>          Burp Suite · OWASP ZAP · SecHeaders · ffuf
+  <span class="hl">web</span>          Burp Suite · OWASP ZAP · SecHeaders · VulnHawk · ffuf
   <span class="hl">exploit</span>      Metasploit · searchsploit · msfvenom
   <span class="hl">post</span>         linpeas/winpeas · BloodHound · CrackMapExec
   <span class="hl">wifi</span>         Aircrack-ng · hcxtools
@@ -233,6 +233,9 @@ projects:()=>out(
 
   <span class="hl">📡 PacketHawk</span>        pcap forensics: scans, beacons, exfil, floods
         └─ <a href="https://github.com/mustafaak0/packethawk" target="_blank">github.com/mustafaak0/packethawk</a>
+
+  <span class="hl">🦅 VulnHawk</span>         web vuln + misconfig scanner · A–F grader
+        └─ <a href="https://github.com/mustafaak0/vulnhawk" target="_blank">github.com/mustafaak0/vulnhawk</a>
 
   <span class="hl">🗂️ Pentest Notes</span>     cheatsheets: recon → privesc → hardening
         └─ <a href="https://github.com/mustafaak0/pentest-notes" target="_blank">github.com/mustafaak0/pentest-notes</a>`),
